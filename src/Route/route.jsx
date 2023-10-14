@@ -7,6 +7,7 @@ import Account from "../Component/Account/Account";
 import ApiDocs from "../Component/ApiDocs/ApiDocs";
 import ApiKey from "../Component/ApiKey/ApiKey";
 import TanStackTable from "../Component/TanStackTable/TanStackTable";
+import DemoTable from "../Component/TanStackTable/DemoTable";
 
 const route = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const route = createBrowserRouter([
         path: "/table",
         element: <TanStackTable />,
       },
+      {
+        path : '/demoTable',
+        element: <DemoTable/>
+      }
     ],
   },
 ]);
