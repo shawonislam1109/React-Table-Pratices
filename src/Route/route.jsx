@@ -8,6 +8,7 @@ import ApiDocs from "../Component/ApiDocs/ApiDocs";
 import ApiKey from "../Component/ApiKey/ApiKey";
 import TanStackTable from "../Component/TanStackTable/TanStackTable";
 import DemoTable from "../Component/TanStackTable/DemoTable";
+import Board from "../Component/Tic-tac-tao/Index";
 
 const route = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const route = createBrowserRouter([
       {
         path : '/demoTable',
         element: <DemoTable/>
+      },
+      {
+        path : '/tic-tac',
+        element: <Board/>
       }
     ],
   },

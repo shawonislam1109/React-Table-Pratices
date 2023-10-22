@@ -1,7 +1,10 @@
-import { Box } from "@mui/material";
-
+import Index from "./Index";
 const Dashboard = () => {
-  return <Box>Dashboard</Box>;
+  return (
+    <>
+      <Index/>
+    </>
+  );
 };
 
 export default Dashboard;

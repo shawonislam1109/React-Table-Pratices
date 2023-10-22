@@ -12,6 +12,7 @@ import { Outlet } from "react-router-dom";
 import { useState } from "react";
 import { Drawer } from "@mui/material";
 
+
 export default function MenuAppBar() {
   const [auth, setAuth] = useState(true);
 
@@ -120,15 +121,16 @@ export default function MenuAppBar() {
       {/*  outlet and left side bar section */}
       <Box display="flex" mt={{ md: 8, xs: 6 }}>
         <Box
-          width="20%"
+          width="25%"
           sx={{
-            display: { md: "block", xs: "none", position: "sticky", top: "0" },
+            display: { md: "block", xs: "none"},
           }}
         >
-          <SideNavbar />
+            <SideNavbar />
+         
         </Box>
 
-        <Box width="80%">
+        <Box width={{md:'80%' , xs: '100%'}}>
           <Outlet />
         </Box>
       </Box>

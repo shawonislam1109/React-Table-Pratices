@@ -11,7 +11,7 @@ import {
 import { COLUMNS } from "./column";
 import MOCK_DATA from "../../MOCK_DATA.json";
 // import "./table.css";
-import ColumnFilter from "./ColumnFilter";
+// import ColumnFilter from "./ColumnFilter";
 
 import {
   Button,
@@ -81,7 +81,7 @@ const BasicTable = () => {
       {/* table oder button */}
       <Button
         variant="contained"
-        onClick={() => setColumnOrder(["email", "Name"])}
+        onClick={() => setColumnOrder(["id", "email" , 'Name' , "gender" , "ip_address"])}
       >
         Table by order
       </Button>
